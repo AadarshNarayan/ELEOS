@@ -12,9 +12,16 @@ Inside the terminal in Visual Studios run the 'npm start' command.
 
 USER 
 
-Now open your web browser, type 'localhost:7000/user' in the address bar, and press enter. This will take you to the user login page. 
+
+
+Now open your web browser, type 'localhost:7000/user' in the address bar, and press enter. This will take you to the user login page.
+
+![1](https://github.com/user-attachments/assets/217a16e8-6003-4932-a908-f1645a93de57)
+
 
 You can either enter your ID and password to log in or create an account and then log in. On doing so you will be able to access the user page. 
+
+
 
 Clicking on the 'Learn More' button will take you to the Learn More page where you can learn more about the project.
 
