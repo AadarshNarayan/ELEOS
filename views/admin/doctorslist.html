@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Users List</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: url('https://img.freepik.com/free-vector/medical-technology-science-background-vector-blue-with-blank-space_53876-117739.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      backdrop-filter: blur(5px);
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    table {
+      width: 90%;
+      max-width: 800px;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  
+    th,
+    td {
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba(238, 238, 238, 0.8);
+      text-align: left;
+      font-size: 0.9em;
+    }
+  
+    th {
+      background-color: rgba(250, 250, 250, 0.9);
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: normal;
+    }
+  
+    tr:hover {
+      background-color: rgba(35, 158, 235, 0.8);
+    }
+  
+    td {
+      color: #555;
+    }
+  
+    tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+  
+  
+  
+</head>
+
+<body>
+  <h1>Doctors List </h1>
+  <table id="usersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Specialization</th>
+        <th>Location</th>
+        <th>Contact</th>
+        <th>Email ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Users data will be injected here -->
+    </tbody>
+  </table>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('/user/service/health/bookappointments/data')
+        .then(response => response.json())
+        .then(users => {
+          const usersTableBody = document.getElementById('usersTable').getElementsByTagName('tbody')[0];
+          users.forEach(user => {
+            const row = usersTableBody.insertRow();
+            row.insertCell(0).textContent = user.id;
+            row.insertCell(1).textContent = user.name;
+            row.insertCell(2).textContent = user.specialization;
+            row.insertCell(3).textContent = user.location;
+            row.insertCell(4).textContent = user.number;
+            row.insertCell(5).textContent = user.emailid;
+          });
+        })
+        .catch(error => console.error('Error fetching users:', error));
+    });
+  </script>
+</body>
+
+</html>
