@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #3b3b3b;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('https://mrwallpaper.com/images/high/fall-aesthetic-foggy-pine-forest-upyvck1vt75hk7ey.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://blog.infraspeak.com/wp-content/uploads/2021/08/Maintenance-as-a-Service.jpeg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .custom-font {
+            font-family: ' Allura'; 
+            font-weight: bold; 
+            font-size: 16px; 
+        }
+    </style>
+    <title>Font Styling Example</title>
+</head>
+<body>
+    <p>
+        <span class="custom-font">ELEOS</span>
+        <a href="#home" class="w3-button">HOME</a>
+    <a href="#services" class="w3-button"><i class=""></i> SERVICES</a>
+    <a href="#users" class="w3-button"><i class=""></i> USERS</a>
+    <a href="#team" class="w3-button"><i class=""></i> TEAM</a>
+    
+  </div>
+    </p>
+</body>
+    
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+    <a href="#users" class="w3-bar-item w3-button" onclick="toggleFunction()">USERS</a>
+    <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">TEAM</a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WELCOME <span class="w3-hide-small">BACK</span> ADMIN</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="services">
+  <h3 class="w3-center">OUR SERVICES</h3>
+  <p class="w3-center"><em>Services are the non-physical, intangible parts of our economy. Unlike goods (which we can touch or handle), services encompass a wide range of activities that create value and benefit consumers.Services dominate advanced economies, representing a significant share of GDP and employment.
+They contribute to economic growth, innovation, and societal well-being.</em></p>
+
+<div class="w3-content w3-container w3-padding-16" id="services"></div>
+<div style="text-align: center;">
+
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    TRANSPORTATION
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">OLA and Uber services</button>
+    <button class="dropdown-item" type="button">Vehicle Service Centers</button>
+    <button class="dropdown-item" type="button">Nearby Transit Stations</button>
+    <button class="dropdown-item" type="button">Travel Booking</button>
+    <button class="dropdown-item" type="button">Buy and Selling</button>
+  </div>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    HEALTH
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Book your appointments</button>
+    <button class="dropdown-item" type="button">Nearby Hospital Services</button>
+    <button class="dropdown-item" type="button">Emergency Services</button>
+    <button class="dropdown-item" type="button">Elder care and Nurse Services</button>
+    <button class="dropdown-item" type="button">Nearby Pharmacy</button>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    FINANCE
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Nearby Bank details</button>
+    <button class="dropdown-item" type="button">Tax & Insurance</button>
+    <button class="dropdown-item" type="button">Loan Details</button>
+  </div>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    EDUCATION
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Nearby educational institutions</button>
+    <button class="dropdown-item" type="button">Industry Training and Job aid Centers</button>
+    <button class="dropdown-item" type="button">Arts, Sports & Cultural activities</button>
+    <button class="dropdown-item" type="button">Learning Materials</button>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    GOVERNMENT
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Aadhar related Services</button>
+    <button class="dropdown-item" type="button">Passport Services</button>
+    <button class="dropdown-item" type="button">Government Schemes</button>
+    <button class="dropdown-item" type="button">Approval Centers</button>
+    <button class="dropdown-item" type="button">Coustomer queries</button>
+  </div>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    HOUSING
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Community Helper details</button>
+    <button class="dropdown-item" type="button">Food & Water Supply</button>
+    <button class="dropdown-item" type="button">House Renting / Purchase</button>
+    <button class="dropdown-item" type="button">Maid Contacts</button>
+    <button class="dropdown-item" type="button">Home Services</button>
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <p class="w3-large w3-center w3-padding-64"></p>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="users">
+  <h3 class="w3-center">OUR USERS</h3>
+  <p class="w3-center"><em>A user is a person or entity that engages with a product, service, or system in some way. This interaction can involve using, interacting with, or consuming the product or service.<br> 
+  <a href="/admin/alluser" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Click Here</a>
+
+<div class="w3-content w3-container w3-padding-0" id="team">
+
+  <section class="bg-light py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="mb-4 display-5 text-center">Our Team</h2>
+        <p class="text-secondary mb-5 text-center lead fs-4">We are a group of innovative, experienced, and proficient teams. You will love to collaborate with us.</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+
+    <div class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-0 gx-xxl-5">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              
+              <img class="img-fluid" loading="lazy" src="https://media.licdn.com/dms/image/D4E03AQGcuFK1IKA9aQ/profile-displayphoto-shrink_800_800/0/1694324829638?e=1726099200&v=beta&t=o_8FgWNIL-G9DaCecl1MsztUGCvI474l4GMHEDtConM" alt="">
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-3">Aadarsh Narayan P.S,CSE ,MBCET</h4>
+                <a href="https://www.linkedin.com/in/aadarsh-narayan-ps-88149828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <p class="text-secondary mb-0">linkedin </p></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="https://media.licdn.com/dms/image/D5603AQF490D1c61suA/profile-displayphoto-shrink_800_800/0/1714665240047?e=1726099200&v=beta&t=4PriQ_3wZDt0WRVHj8Lggb3J2aXEX7vFYb6aqKQeQXI" alt="">
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-5">Amaldev S.S CSE ,MBCET</h4>
+                <a href="https://www.linkedin.com/in/amaldevss?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <p class="text-secondary mb-0">linkedin</p></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="https://media.licdn.com/dms/image/D5603AQFOzqAKBHsRAQ/profile-displayphoto-shrink_800_800/0/1720670338585?e=1726099200&v=beta&t=6FNEJDCTjmoxPpx0oJO6Ao2Auqw6zmtszwTTxL-mNPw" alt="">
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-5">Danil R.A , CSE ,MBCET</h4>
+                <a href="https://www.linkedin.com/in/danil-r-a-04b579291/">
+                <p class="text-secondary mb-0">linkedin</p></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="https://media.licdn.com/dms/image/D5603AQFBWntL-3E6sg/profile-displayphoto-shrink_800_800/0/1702643788300?e=1726099200&v=beta&t=TdAzkY8I6NPwGZ9QOqjcjIUNk5NgSAfb1UO5iFH-frs" alt="">
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-5">Adithya P , CSE ,MBCET</h4>
+                <a href="https://www.linkedin.com/in/-adithya-p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <p class="text-secondary mb-0">linkedin</p></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-1/assets/css/team-1.css" />
+</div>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-1/assets/css/team-1.css" />
+</div>
+
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+ 
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Submission Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFUoOzaBd_QpPk6HpTIOZZYXdqVUQJur72g&s') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(247, 251, 251, 0.958);
+      border: 1px solid #f0f0f0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #007bff;
+    }
+    .form-group label {
+      font-weight: bold;
+      color: #555;
+    }
+    .form-control {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn-primary {
+      width: 100%;
+      background-color: #007bff;
+      border-color: #007bff;
+      border-radius: 5px;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('showFormButton').addEventListener('click', function () {
+        document.getElementById('userForm').style.display = 'block';
+      });
+
+      document.getElementById('detailsForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const response = await fetch('/user/send-details', {
+          method: 'POST',
+          body: JSON.stringify(Object.fromEntries(formData)),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+
+        const result = await response.json();
+        alert(result.message);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Welcome to Service provider Registration </h2>
+      <form action="/user/send-details" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession</label>
+          <input type="text" class="form-control" id="profession" name="profession" placeholder="Enter your profession"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <input type="text" class="form-control" id="service" name="service" placeholder="Enter your service" required>
+        </div>
+        <div class="form-group">
+          <label for="place">Location</label>
+          <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input type="tel" class="form-control" id="contact" name="contact" placeholder="Enter your contact number"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

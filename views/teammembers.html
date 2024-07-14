@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  <title>Team members</title>
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team</title>
+</head>
+<style>
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(254, 240, 240, 0.618);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color:rgb(240, 233, 233);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+
+  .custom-heading {
+    font-size: 1.4em;
+  }
+</style>
+
+
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <div style="text-align: center;">
+          <p style="font-size: 50px; color: azure;font-family: 'Georgia', serif;">Our Team</p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 20px; color: azure;">We are a group of innovative, experienced, and proficient teams. You will love to
+            collaborate with us.</p>
+        </div>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/images/aadarshpic.jpg" alt="Aadarsh" style="width:100%">
+        <div class="container">
+          <h3 class="coustom-heading" style="color: aliceblue;">Aadarsh Narayan P.S</h3>
+          <p class="title" style="color: #dee0e0;">CSE, MBCET</p>
+          <a href="https://www.linkedin.com/in/aadarsh-narayan-ps-88149828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <p class="button">LinkedIn</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/images/amalpic.jpg" alt="Amal" style="width:100%">
+        <div class="container">
+          <h2 style="color: aliceblue;">Amaldev S.S</h2>
+          <p class="title" style="color: #dee0e0;">CSE, MBCET</p>
+          <a href="https://www.linkedin.com/in/amaldevss?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <p class="button">LinkedIn</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/images/adithyapic.jpg" alt="Adithya" style="width:100%">
+        <div class="container">
+          <h2 style="color: aliceblue;">Adithya P</h2>
+          <p class="title" style="color: #dee0e0;">CSE, MBCET</p>
+          <a href="https://www.linkedin.com/in/-adithya-p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <p class="button">LinkedIn</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/images/danilpic.jpg" alt="Danil" style="width:100%">
+        <div class="container">
+          <h2 style="color:aliceblue;">Danil R.A</h2>
+          <p class="title" style="color: #dee0e0;">CSE, MBCET</p>
+          <a href="https://www.linkedin.com/in/danil-r-a-04b579291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <p class="button">LinkedIn</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form>
+    <input style="position: absolute; top: 600px; left: 590px;margin-top:8rem;margin-bottom:2rem;" type="button" value="Go Back"
+      onclick="history.back()" style="background-color: rgb(0, 0, 0); color: rgb(0, 0, 0);">
+  </form>
+
+</body>
+
+</html>
