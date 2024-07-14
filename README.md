@@ -4,7 +4,8 @@ Eleos is a comprehensive services portal that provides information and resources
 
 ## Installation
 
-Download all the files to a folder and open that folder using Visual Studios. Once you have opened the folder in Visual Studios make sure to run the 'npm install' command to install all libraries mentioned in the package.json file
+Download all the files to a folder and open that folder using Visual Studios. Once you have opened the folder in Visual Studios make sure to run the 'npm install' command to install all libraries mentioned in the package.json file.
+here we connected the project to the database postgresql for login purpose and display service provider details.
 
 ## Usage/Examples
 Inside the terminal in Visual Studios run the 'npm start' command.
